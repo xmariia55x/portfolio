@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="María Gálvez — Software Engineer. Portfolio personal y CV.">
+  <meta name="description" content="María Gálvez — Software Engineer. Personal portfolio and CV.">
   <title>María Gálvez — Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +16,16 @@
   <nav class="nav" id="nav">
     <div class="nav__container">
       <a href="#hero" class="nav__logo">MG</a>
-      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links" id="nav-links" role="list">
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#experience">Experiencia</a></li>
-        <li><a href="#skills">Habilidades</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#education">Educación</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -33,74 +33,87 @@
   <!-- ─── HERO ─────────────────────────────────────────── -->
   <section class="hero" id="hero">
     <div class="hero__content">
-      <p class="hero__greeting">Hola, soy</p>
+      <p class="hero__greeting">Hi, I'm</p>
       <h1 class="hero__name">María Gálvez</h1>
       <p class="hero__title">Software Engineer</p>
       <p class="hero__tagline">
-        Construyo productos digitales con atención al detalle y pasión por la simplicidad.
+        I build digital products with attention to detail and a passion for simplicity.
       </p>
       <div class="hero__cta">
-        <a href="#contact" class="btn btn--primary">Contactar</a>
+        <a href="#contact" class="btn btn--primary">Get in touch</a>
         <a href="assets/cv.pdf" class="btn btn--secondary" download>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          Descargar CV
+          Download CV
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ─── SOBRE MÍ ──────────────────────────────────────── -->
+  <!-- ─── ABOUT ─────────────────────────────────────────── -->
   <section class="section section--alt about" id="about">
     <div class="container">
-      <h2 class="section__title">Sobre mí</h2>
+      <h2 class="section__title">About</h2>
       <div class="about__grid">
         <div class="about__image">
-          <!-- Cuando tengas tu foto, reemplaza el div por:
-               <img src="assets/profile.jpg" alt="María Gálvez"> -->
-          <div class="about__photo-placeholder" aria-hidden="true">MG</div>
+               <img src="assets/profile.jpeg" alt="María Gálvez">
         </div>
         <div class="about__text">
           <p>
-            Soy ingeniera de software con experiencia en desarrollo de aplicaciones web y sistemas distribuidos.
-            Me apasiona construir herramientas que sean a la vez funcionales y elegantes, y disfruto especialmente
-            del trabajo en la intersección entre backend e infraestructura.
+            I'm a software engineer with experience in web application development and distributed systems.
+            I'm passionate about building tools that are both functional and elegant, and I especially enjoy
+            working at the intersection of backend and infrastructure.
           </p>
           <p>
-            Tengo especial interés en la automatización, la fiabilidad de sistemas y las buenas prácticas de
-            ingeniería. Creo que el código bien escrito es código que cualquier persona del equipo puede mantener
-            con confianza.
+            I have a particular interest in automation, system reliability, and solid engineering practices.
+            I believe that well-written code is code that anyone on the team can maintain with confidence.
           </p>
           <p>
-            Actualmente vivo en Helsinki, Finlandia, donde trabajo en [empresa]. En mi tiempo libre me gusta
-            explorar proyectos de domótica, leer y hacer senderismo.
+            I'm currently based in Málaga, Spain, working remotely as a Platform &amp; DevOps Engineer at Keypro.
+            In my free time I like to explore home automation projects, read, and go hiking.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── EXPERIENCIA ───────────────────────────────────── -->
+  <!-- ─── EXPERIENCE ────────────────────────────────────── -->
   <section class="section experience" id="experience">
     <div class="container">
-      <h2 class="section__title">Experiencia</h2>
+      <h2 class="section__title">Experience</h2>
       <div class="timeline">
 
         <div class="timeline__item">
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
+              <h3>Platform &amp; DevOps Engineer</h3>
+              <span class="timeline__date">Jan 2025 — Present</span>
+            </div>
+            <p class="timeline__company">Keypro · Málaga, Spain · Remote</p>
+            <ul class="timeline__achievements">
+              <li>Led the migration of 30+ environments to MapServer 8 and PostgreSQL, using custom Helm charts and Terraform automation for deployments on AWS EKS.</li>
+              <li>Automated and continuously improved CI/CD pipelines (GitHub Actions), integrating security and analysis tooling (SonarQube, Snyk) and reducing deployment time through automated validations and regression testing.</li>
+              <li>Managed and optimised cloud infrastructure (AWS, Kubernetes) with ArgoCD, Terraform, and Helm for efficient, reproducible deployments.</li>
+              <li>Troubleshot and resolved complex production and staging issues across network layers, mapfiles, and deployment configurations.</li>
+              <li>Standardised and documented DevOps processes and drove proof-of-concept initiatives for new tooling (e.g. SFTPGo, shared deployment workflows).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
               <h3>Software Engineer</h3>
-              <span class="timeline__date">2023 — Presente</span>
+              <span class="timeline__date">Jun 2024 — Nov 2024</span>
             </div>
-            <p class="timeline__company">Keypro Oy · Helsinki, Finlandia</p>
+            <p class="timeline__company">rindus · Málaga, Spain · Hybrid</p>
             <ul class="timeline__achievements">
-              <li>Logro o responsabilidad clave 1 — describe el impacto, no solo la tarea</li>
-              <li>Logro o responsabilidad clave 2</li>
-              <li>Logro o responsabilidad clave 3</li>
+              <li>Development of web applications and backend services using modern frameworks and technologies (mob programming, TDD, CI/CD).</li>
             </ul>
           </div>
         </div>
@@ -109,13 +122,16 @@
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
-              <h3>Título del puesto anterior</h3>
-              <span class="timeline__date">2021 — 2023</span>
+              <h3>Junior Software Engineer</h3>
+              <span class="timeline__date">Aug 2022 — May 2024</span>
             </div>
-            <p class="timeline__company">Nombre de la empresa · Ciudad</p>
+            <p class="timeline__company">FMIT Technologies S.L. · Málaga, Spain · Hybrid</p>
             <ul class="timeline__achievements">
-              <li>Logro o responsabilidad clave 1</li>
-              <li>Logro o responsabilidad clave 2</li>
+              <li>Implemented CI/CD workflows across multiple company projects, integrating client-requested DevSecOps tools (SonarQube, BlackDuck, Pactflow, DataDog) for monitoring, and automated manual processes with Docker and Kubernetes.</li>
+              <li>Analysed and implemented features requested by stakeholders, deploying project microservices to the client's environment with ArgoCD, Docker, and Kubernetes.</li>
+              <li>Ensured code resilience by writing test cases with Jest, and produced comprehensive documentation spanning project-level overviews to daily tasks.</li>
+              <li>Worked under an agile, sprint-based methodology requiring adaptability and continuous collaboration in a dynamic environment.</li>
+              <li>Onboarded new team members and delivered knowledge-transfer talks on the project and the team's working methodology.</li>
             </ul>
           </div>
         </div>
@@ -124,13 +140,41 @@
           <div class="timeline__dot"></div>
           <div class="timeline__content">
             <div class="timeline__header">
-              <h3>Título del primer puesto</h3>
-              <span class="timeline__date">2019 — 2021</span>
+              <h3>DevOps Intern</h3>
+              <span class="timeline__date">Jan 2022 — Jul 2022</span>
             </div>
-            <p class="timeline__company">Nombre de la empresa · Ciudad</p>
+            <p class="timeline__company">IDNEO · Internship</p>
             <ul class="timeline__achievements">
-              <li>Logro o responsabilidad clave 1</li>
-              <li>Logro o responsabilidad clave 2</li>
+              <li>Supported the DevOps team in deploying internal applications on AWS, using Docker for application deployment and Jenkins for CI/CD.</li>
+              <li>Wrote Shell scripts to automate processes and assisted the internal apps development team in maintaining internal applications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Intern</h3>
+              <span class="timeline__date">Apr 2022 — Jun 2022</span>
+            </div>
+            <p class="timeline__company">Söderberg &amp; Partners · Remote</p>
+            <ul class="timeline__achievements">
+              <li>Took part in Scrum ceremonies and work planning, managed automated delivery systems, and built proof-of-concept solutions using the latest Microsoft technologies (e.g. .NET Framework).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3>Tool Developer — SOM Group</h3>
+              <span class="timeline__date">Jun 2021 — Dec 2021</span>
+            </div>
+            <p class="timeline__company">Universitat Oberta de Catalunya · Part-time</p>
+            <ul class="timeline__achievements">
+              <li>Developed a tool that generates suggestions from a partial data model using Artificial Intelligence (NLP).</li>
             </ul>
           </div>
         </div>
@@ -139,14 +183,14 @@
     </div>
   </section>
 
-  <!-- ─── HABILIDADES ───────────────────────────────────── -->
+  <!-- ─── SKILLS ────────────────────────────────────────── -->
   <section class="section section--alt skills" id="skills">
     <div class="container">
-      <h2 class="section__title">Habilidades</h2>
+      <h2 class="section__title">Skills</h2>
       <div class="skills__grid">
 
         <div class="skills__group">
-          <h3 class="skills__group-title">Lenguajes</h3>
+          <h3 class="skills__group-title">Languages</h3>
           <div class="skills__chips">
             <span class="chip">Python</span>
             <span class="chip">JavaScript</span>
@@ -157,32 +201,51 @@
         </div>
 
         <div class="skills__group">
-          <h3 class="skills__group-title">Frameworks</h3>
+          <h3 class="skills__group-title">Frameworks &amp; Libraries</h3>
           <div class="skills__chips">
-            <span class="chip">React</span>
+            <span class="chip">Flask</span>
+            <span class="chip">React Native</span>
             <span class="chip">Node.js</span>
-            <span class="chip">FastAPI</span>
-            <span class="chip">Django</span>
+            <span class="chip">.NET</span>
+            <span class="chip">Jest</span>
           </div>
         </div>
 
         <div class="skills__group">
-          <h3 class="skills__group-title">DevOps & Herramientas</h3>
+          <h3 class="skills__group-title">Cloud &amp; DevOps</h3>
           <div class="skills__chips">
+            <span class="chip">AWS</span>
+            <span class="chip">Kubernetes</span>
             <span class="chip">Docker</span>
+            <span class="chip">Terraform</span>
+            <span class="chip">Helm</span>
+            <span class="chip">ArgoCD</span>
+            <span class="chip">Jenkins</span>
+            <span class="chip">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title">Tools &amp; Databases</h3>
+          <div class="skills__chips">
             <span class="chip">Git</span>
             <span class="chip">Linux</span>
-            <span class="chip">GitHub Actions</span>
             <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">SonarQube</span>
+            <span class="chip">Snyk</span>
+            <span class="chip">DataDog</span>
           </div>
         </div>
 
         <div class="skills__group">
-          <h3 class="skills__group-title">Idiomas</h3>
+          <h3 class="skills__group-title">Spoken languages</h3>
           <div class="skills__chips">
-            <span class="chip">Español (nativo)</span>
-            <span class="chip">Inglés (C1)</span>
-            <span class="chip">Finés (básico)</span>
+            <span class="chip">Spanish (native)</span>
+            <span class="chip">English (C1)</span>
+            <span class="chip">French (B2)</span>
+            <span class="chip">German (A2)</span>
           </div>
         </div>
 
@@ -190,17 +253,17 @@
     </div>
   </section>
 
-  <!-- ─── PROYECTOS ─────────────────────────────────────── -->
+  <!-- ─── PROJECTS ──────────────────────────────────────── -->
   <section class="section projects" id="projects">
     <div class="container">
-      <h2 class="section__title">Proyectos</h2>
+      <h2 class="section__title">Projects</h2>
       <div class="projects__grid">
 
         <article class="project-card">
           <div class="project-card__header">
             <h3 class="project-card__title">Home Assistant Setup</h3>
             <div class="project-card__links">
-              <a href="https://github.com/mariagalvez" target="_blank" rel="noopener" aria-label="Ver en GitHub">
+              <a href="https://github.com/xmariia55x" target="_blank" rel="noopener" aria-label="View on GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
                 </svg>
@@ -208,8 +271,8 @@
             </div>
           </div>
           <p class="project-card__desc">
-            Automatización del hogar con Home Assistant sobre N100 Mini PC. Integración de dispositivos Tapo,
-            acceso remoto vía WireGuard VPN y sin coste mensual de suscripción.
+            Home automation with Home Assistant running on an N100 Mini PC. Tapo device integration,
+            remote access over WireGuard VPN, and no monthly subscription cost.
           </p>
           <div class="project-card__tags">
             <span class="chip chip--small">Home Assistant</span>
@@ -221,37 +284,40 @@
 
         <article class="project-card">
           <div class="project-card__header">
-            <h3 class="project-card__title">Nombre del Proyecto 2</h3>
+            <h3 class="project-card__title">GoSykel — Mobile App</h3>
             <div class="project-card__links">
-              <a href="#" target="_blank" rel="noopener" aria-label="Ver en GitHub">
+              <a href="https://github.com/xmariia55x/GoSykel-Frontend-Public" target="_blank" rel="noopener" aria-label="View frontend on GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
                 </svg>
               </a>
-              <a href="#" target="_blank" rel="noopener" aria-label="Ver demo">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
-                  <polyline points="15 3 21 3 21 9"/>
-                  <line x1="10" y1="14" x2="21" y2="3"/>
+              <a href="https://github.com/xmariia55x/GoSykel-Backend-Public" target="_blank" rel="noopener" aria-label="View backend on GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
                 </svg>
               </a>
             </div>
           </div>
           <p class="project-card__desc">
-            Descripción del proyecto. Qué problema resuelve, qué tecnologías usa y qué aprendiste construyéndolo.
+            A mobile app for cyclists to create, follow, and complete routes. Users earn points for actions like
+            adding routes or bike-lane sections, climb a ranking, and spend points in a shop to personalise their
+            profile. Backend: a Python REST API over MongoDB with Firebase auth, deployed on Heroku.
+            Frontend: a React Native app.
           </p>
           <div class="project-card__tags">
+            <span class="chip chip--small">React Native</span>
+            <span class="chip chip--small">Node.js</span>
             <span class="chip chip--small">Python</span>
-            <span class="chip chip--small">FastAPI</span>
-            <span class="chip chip--small">PostgreSQL</span>
+            <span class="chip chip--small">MongoDB</span>
+            <span class="chip chip--small">Firebase</span>
           </div>
         </article>
 
         <article class="project-card">
           <div class="project-card__header">
-            <h3 class="project-card__title">Nombre del Proyecto 3</h3>
+            <h3 class="project-card__title">GodTour — Web App</h3>
             <div class="project-card__links">
-              <a href="#" target="_blank" rel="noopener" aria-label="Ver en GitHub">
+              <a href="https://github.com/xmariia55x/GodTour" target="_blank" rel="noopener" aria-label="View on GitHub">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
                 </svg>
@@ -259,12 +325,16 @@
             </div>
           </div>
           <p class="project-card__desc">
-            Descripción del proyecto. Qué problema resuelve, qué tecnologías usa y qué aprendiste construyéndolo.
+            A carpooling website with Google OAuth login and registration. Users create and join trips, pay via
+            PayPal, manage their vehicles, and store trip images in the cloud. Integrates external APIs (Twitter,
+            OpenStreetMap, WeatherAPI) for trip sharing, weather forecasts, gas stations, and nearby traffic incidents.
           </p>
           <div class="project-card__tags">
-            <span class="chip chip--small">TypeScript</span>
-            <span class="chip chip--small">React</span>
-            <span class="chip chip--small">Node.js</span>
+            <span class="chip chip--small">Python</span>
+            <span class="chip chip--small">Flask</span>
+            <span class="chip chip--small">Bootstrap</span>
+            <span class="chip chip--small">MongoDB</span>
+            <span class="chip chip--small">REST APIs</span>
           </div>
         </article>
 
@@ -272,42 +342,58 @@
     </div>
   </section>
 
-  <!-- ─── EDUCACIÓN ─────────────────────────────────────── -->
+  <!-- ─── EDUCATION ─────────────────────────────────────── -->
   <section class="section section--alt education" id="education">
     <div class="container">
-      <h2 class="section__title">Educación</h2>
+      <h2 class="section__title">Education</h2>
       <div class="education__list">
 
         <div class="education__item">
           <div class="education__info">
-            <h3>Grado en Ingeniería Informática</h3>
-            <p class="education__school">Universidad de [Nombre] · Ciudad</p>
+            <h3>Bachelor's Degree in Engineering — Software Engineering</h3>
+            <p class="education__school">University of Málaga</p>
           </div>
-          <span class="education__year">2015 — 2019</span>
+          <span class="education__year">2018 — 2022</span>
         </div>
 
         <div class="education__item">
           <div class="education__info">
-            <h3>Certificación o curso relevante</h3>
-            <p class="education__school">Institución o plataforma</p>
+            <h3>Trinity Advanced C1 — English</h3>
+            <p class="education__school">GetBrit Academy</p>
           </div>
-          <span class="education__year">2022</span>
+          <span class="education__year">2018</span>
+        </div>
+
+        <div class="education__item">
+          <div class="education__info">
+            <h3>B2 — French</h3>
+            <p class="education__school">Alliance Française</p>
+          </div>
+          <span class="education__year">2023</span>
+        </div>
+
+        <div class="education__item">
+          <div class="education__info">
+            <h3>A2 — German (unaccredited)</h3>
+            <p class="education__school">GetBrit Academy</p>
+          </div>
+          <span class="education__year">2018</span>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ─── CONTACTO ──────────────────────────────────────── -->
+  <!-- ─── CONTACT ───────────────────────────────────────── -->
   <section class="section contact" id="contact">
     <div class="container">
-      <h2 class="section__title">Contacto</h2>
+      <h2 class="section__title">Contact</h2>
       <p class="contact__text">
-        ¿Tienes un proyecto interesante o simplemente quieres saludar? Escríbeme.
+        Have an interesting project, or just want to say hi? Drop me a line.
       </p>
       <div class="contact__links">
 
-        <a href="mailto:maria.galvez@keypro.fi" class="contact__link">
+        <a href="mailto:mariagalvez12345@gmail.com" class="contact__link">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
@@ -315,14 +401,14 @@
           Email
         </a>
 
-        <a href="https://linkedin.com/in/tu-perfil" class="contact__link" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/maria-galman/" class="contact__link" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
           </svg>
           LinkedIn
         </a>
 
-        <a href="https://github.com/mariagalvez" class="contact__link" target="_blank" rel="noopener">
+        <a href="https://github.com/xmariia55x" class="contact__link" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
           </svg>
@@ -335,7 +421,7 @@
 
   <!-- ─── FOOTER ────────────────────────────────────────── -->
   <footer class="footer">
-    <p>© 2025 María Gálvez · Diseñado y construido con cariño</p>
+    <p>© 2025 María Gálvez · Designed and built with care</p>
   </footer>
 
   <script src="main.js"></script>
